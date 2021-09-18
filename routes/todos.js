@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+const todos = [{ id: 1, name: 'Do something', completed: false }]
+
+// /todos/
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.json(todos);
 });
 
 module.exports = router;
