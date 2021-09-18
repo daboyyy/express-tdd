@@ -42,7 +42,7 @@ describe('Todos API' , () => {
             .send({
                 name: 'do dishes'
             })
-            .expect('Content-types', /json/)
+            .expect('Content-type', /json/)
             .expect(201)
             .then(res => {
                 expect(res.body).toEqual(
