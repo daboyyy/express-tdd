@@ -22,6 +22,10 @@ router.get('/:id', function(req, res, next) {
 router.post('/', function(req, res, next) {
     const { body } = req;
 
+    if(typeof body.name !== 'string') {
+        return next(createError(422, 'Validation Error'))
+    }
+
     const newTodo = {
         id: todos.length + 1,
         name: body.name,
