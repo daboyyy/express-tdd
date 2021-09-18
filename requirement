@@ -1,0 +1,6 @@
+npm install
+npm install -D jest supertest
+
+"test": "jest --watchAll"
+// --watchAll which mean everytime you changing your code jest will do auto re-test
+// adding inside "scripts" zone in package.json
