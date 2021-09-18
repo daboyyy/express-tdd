@@ -1,3 +1,5 @@
+npx express-generator --no-view express-tdd
+
 npm install
 npm install -D jest supertest
 
